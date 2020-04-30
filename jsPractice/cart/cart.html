@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车特效</title>
+    <link rel="stylesheet" href="./css/cart.min.css">
+    <script src="../jquery-3.0.0.min.js"></script>
+    <script src="./js/cart.js"></script>
+</head>
+
+<body>
+    <table id="cartTable">
+        <thead>
+            <th>
+                <input type="checkbox" name="selectAll" id="selectAll" class="selectAll"> 全选
+            </th>
+            <th>商品</th>
+            <th>单价</th>
+            <th>数量</th>
+            <th>小计</th>
+            <th>操作</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" name="selectAll" id="">
+                </td>
+                <td class="cart-pic"><img width="120" height="90" src="./img/camera.jpg" alt="">卡西欧</td>
+                <td>3999</td>
+                <td class="num">
+                    <span class="reduce"> - </span>
+                    <input type="text" name="" id="" size="1" value="1">
+                    <span class="add">+</span>
+                </td>
+                <td>3999.00</td>
+                <td>
+                    <a class="delete" href="#">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="selectAll" id="">
+                </td>
+                <td class="cart-pic"><img width="120" height="90" src="./img/cosmetics.jpg" alt="">卡西欧</td>
+                <td>3999</td>
+                <td class="num">
+                    <span class="reduce">-</span>
+                    <input type="text" name="" id="" size="1" value="1">
+                    <span class="add">+</span>
+                </td>
+                <td>3999.00</td>
+                <td>
+                    <a class="delete" href="#">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="selectAll" id="">
+                </td>
+                <td class="cart-pic"><img width="120" height="90" src="./img/diamind.jpg" alt="">卡西欧</td>
+                <td>3999</td>
+                <td class="num">
+                    <span class="reduce">-</span>
+                    <input type="text" name="" id="" size="1" value="1">
+                    <span class="add">+</span>
+                </td>
+                <td>3999.00</td>
+                <td>
+                    <a class="delete" href="#">删除</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <div class="foot">
+        <div class="foot-left">
+            <input type="checkbox" name="" id="allInput" class="selectAll"> 全选
+            <a class="deleteAll" href="#">删除</a>
+        </div>
+        <div class="foot-right">
+            <label for="" class="selGoods"> 
+                已选商品<span class="selected">0</span>件
+                <span class="arrow-top">︽</span>
+                <span class="arrow-bottom">︾</span> 
+            </label> 合计： ￥ <span class="total">0.00</span>
+            <div class="foot-btn">
+                <button>结算</button>
+            </div>
+        </div>
+        <div class="float-div">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

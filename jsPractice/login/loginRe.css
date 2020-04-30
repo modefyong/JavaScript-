@@ -1,0 +1,144 @@
+body,
+div,
+p,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: 100% 100%;
+}
+
+.container {
+    position: relative;
+    top: 20px;
+    left: 124px;
+    /* border: 1px solid red; */
+    width: 72%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 200px;
+    left: 16%;
+    width: 30%;
+    height: auto;
+}
+
+.login-title {
+    margin-right: 30px;
+}
+
+.login-title .title {
+    margin-top: 280px;
+    color: #fff;
+    text-align: center;
+    font-size: 55px;
+}
+
+.login-title .title p {
+    margin: 16px;
+}
+
+.login-content {
+    border: 1px solid #999;
+    width: 300px;
+    height: 230px;
+    margin-top: 210px;
+    background-color: rgba(160, 155, 155, 0.2);
+    padding: 30px 60px;
+    box-shadow: 0 0 3px #999;
+}
+
+.login-content h1 {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.login-content input {
+    display: block;
+    padding-left: 16px;
+    width: 280px;
+    height: 40px;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.login-btn {
+    display: flex;
+}
+
+.login-btn button {
+    width: 100px;
+    height: 32px;
+    border: none;
+    outline: none;
+    background-color: rgba(30, 144, 255, 0.8);
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.login-btn .forget {
+    flex: 3;
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+
+/* 设置文本框内placeholder样式 */
+
+input::-webkit-input-placeholder {
+    color: #999;
+    font-size: 16px;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #999;
+    font-size: 16px;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #999;
+    font-size: 16px;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #999;
+    font-size: 16px;
+}
+
+
+/* 底线 */
+
+.btm-line {
+    width: 56%;
+    height: 1px;
+    background-color: #ccc;
+    position: relative;
+    left: 500px;
+    top: 10px;
+}

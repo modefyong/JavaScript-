@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>全选反选</title>
+    <link rel="stylesheet" href="">
+    <script src=""></script>
+</head>
+
+<body>
+    <div>
+        <input type="checkbox">篮球
+        <input type="checkbox">足球
+        <input type="checkbox">阅读
+        <input type="checkbox">写作
+    </div>
+    <div>
+        <button class="selectAll">全选</button>
+        <button class="selectReverse">反选</button>
+    </div>
+
+    <script>
+        // 思考：考查哪个方面的知识？
+        // 表单元素，复选框。
+        // 逻辑：点击全选按钮，控制所有复选框的checked为true；
+        // 点击反选按钮 将所有复选框的checked取反。
+
+        var oAll = document.getElementsByClassName("selectAll")[0];
+        var oReverse = document.getElementsByClassName("selectReverse")[0];
+        var aCheck = document.getElementsByTagName("input");
+        // console.log(aCheck.length);
+
+        // oAll.onclick = function() {
+        //         aCheck[0].checked = false;
+        //     }
+        oAll.addEventListener('click', function() {
+            for (var i = 0; i <= aCheck.length - 1; i++) {
+                aCheck[i].checked = true;
+            }
+        })
+
+        oReverse.addEventListener('click', function() {
+            for (var i = 0; i <= aCheck.length - 1; i++) {
+                aCheck[i].checked = !aCheck[i].checked;
+            }
+        })
+    </script>
+</body>
+
+</html>

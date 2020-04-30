@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冒泡排序（简单版）</title>
+    <link rel="stylesheet" href="">
+    <script src=""></script>
+</head>
+
+<body>
+    <script>
+        // 从小到大排列
+        var arr = [4, 5, 7, 1, 6, 13];
+        for (var i = 0; i <= arr.length; i++) {
+            for (var j = 0; j <= i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    var temp = arr[j + 1];
+                    arr[j + 1] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+
+        }
+        console.log(arr);
+    </script>
+</body>
+
+</html>

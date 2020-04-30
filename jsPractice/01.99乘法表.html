@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>九九乘法表</title>
+    <link rel="stylesheet" href="">
+    <script src=""></script>
+</head>
+
+<body>
+    <script>
+        // 打印九九乘法表。
+        // 方法一：（简单）双重循环，DOM写入。
+        // for (var i = 1; i < 10; i++) {
+        //     document.write("<br>");
+        //     for (var j = 1; j <= i; j++) {
+        //         document.write(i + '*' + j + '=' + (i * j) + ' ');
+        //     }
+        // }
+
+        // 方法二：利用table标签
+        document.write("<table border='1'>");
+        //2.tr标签需要输出9遍所以放入for循环
+        for (var i = 1; i <= 9; i++) {
+            document.write("<tr>");
+            //3.td标签需要45遍，而且还是三角形。所以我们利用双重for循环。
+            for (var j = 1; j <= i; j++) {
+                document.write("<td>");
+                document.write(j + "*" + i + "=" + j * i);
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+
+</body>
+
+</html>

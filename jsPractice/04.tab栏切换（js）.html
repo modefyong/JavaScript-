@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <script src=""></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            width: 400px;
+            height: 400px;
+            margin: 20px auto;
+        }
+        
+        span {
+            display: inline-block;
+            float: left;
+            box-sizing: border-box;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid red;
+            cursor: pointer;
+        }
+        
+        .content {
+            display: none;
+            width: 398px;
+            border: 1px solid #ccc;
+        }
+        
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 利用js实现tab栏切换 -->
+    <div class="container">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <div class="content show">
+            111
+        </div>
+        <div class="content">
+            222
+        </div>
+        <div class="content">
+            333
+        </div>
+        <div class="content">
+            444
+        </div>
+
+    </div>
+    <script>
+        // 自己写的，关键代码没想到：aSpan[i].index = i;保存索引值！
+
+        var aSpan = document.getElementsByTagName('span');
+        var aContent = document.getElementsByClassName('content');
+        for (var i = 0; i <= aSpan.length - 1; i++) {
+            aSpan[i].index = i;
+            aSpan[i].onclick = function() {
+                for (var j = 0; j < aSpan.length; j++) {
+                    // console.log(aContent[j]);
+                    aContent[j].className = 'content';
+                }
+                // 这里的this指的是 aSpan[i]
+                aContent[this.index].classList.add('show');
+            }
+        }
+    </script>
+</body>
+
+</html>

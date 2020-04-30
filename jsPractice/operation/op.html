@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="divport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>说明书</title>
+    <link rel="stylesheet" href="">
+    <script src=""></script>
+    <style>
+        /* .directory .dir-title {
+        } */
+        
+        .directory h3 {
+            text-align: center;
+        }
+        
+        .directory h4 {
+            text-align: center;
+            font-weight: normal;
+            font-size: 28rpx;
+        }
+        
+        h1 {
+            font-size: 32rpx;
+        }
+        
+        div p {
+            font-size: 28rpx;
+        }
+        
+        a {
+            display: block;
+            font-size: 30rpx;
+        }
+        
+        p {
+            text-indent: 2em;
+        }
+        
+        .pic-position {
+            display: flex;
+            text-align: center;
+            margin: 0 auto;
+            width: 80%;
+        }
+        
+        .pic-positionOne {
+            display: flex;
+            text-align: center;
+            margin: 0 auto;
+            width: 50%;
+        }
+        
+        .pic-position img {
+            margin-left: 10px;
+        }
+        
+        .zoom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            right: 150px;
+            bottom: 100px;
+        }
+        
+        .zoom span {
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        
+        .zoom .reduce {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        
+        .zoom .add {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- 说明书目录 -->
+        <div class="directory">
+            <h3>使用说明书</h3>
+            <h4>目录</h4>
+            <div class="dir-title">
+                <a href="#digest" class="first-title">摘要 <span>1</span></a>
+                <a href="#login" class="first-title">一、登录 <span>1</span></a>
+                <a href="#user-login" class="second-title">1.1、用户登录 <span>1</span></a>
+                <!-- <a href="id1" class="second-title">1.2、密钥校验 <span>2</span></a> -->
+                <a href="#index" class="first-title">二、首页 <span>2</span></a>
+                <a href="#monitor" class="first-title">三、监控 <span>3</span></a>
+                <a href="#monitor1" class="second-title">3.1、产污监控 <span>3</span></a>
+                <a href="#monitor2" class="second-title">3.2、产污设施监控 <span>3</span></a>
+                <a href="#monitor3" class="second-title">3.3、实时监控 <span>4</span></a>
+                <a href="#monitor4" class="second-title">3.4、视频监控 <span>5</span></a>
+                <a href="#monitor5" class="second-title">3.5、企业监控 <span>6</span></a>
+                <a href="#monitor6" class="second-title">3.6、企业监控历史数据 <span>7</span></a>
+                <a href="#monitor7" class="second-title">3.7、企业异常汇总 <span>9</span></a>
+                <a href="#warn" class="first-title">四、报警 <span>9</span></a>
+                <a href="#warn1" class="second-title">4.1、异常报警 <span>9</span></a>
+                <a href="#warn2" class="second-title">4.2、报警状态 <span>10</span></a>
+                <a href="#peak" class="first-title">五、错峰生产 <span>12</span></a>
+                <a href="#userInfo" class="first-title">六、个人中心 <span>13</span></a>
+            </div>
+        </div>
+
+        <!-- 说明书内容 -->
+        <div class="content">
+            <div class="" id="digest" style="height: 40px;"></div>
+            <div class="paragraph-item">
+                <h2>摘要</h2>
+                <p>
+                    随着国家和人民对于环保要求的迫切提高，政府相继出台各种措施， 如何针对性的对企业内的环保设置使用状况作出监控，发挥污染治理设备的作用， 提高使用效率，并且政府部门能够实时掌握治污设施的运行状况和异常报警。
+                </p>
+                <p>
+                    我司推出的环保用电管理平台依托创新的物联网电力传感技术，实时采集企业总用电、 生产设备及环保治理设备用电数据，通过关联分析、超限分析、停电分析、停限产分析、及时发现环保治理设备未开启、 异常关闭及减速、空转、降频等异常情况，同时通过数据分析还可以实时监控限产和停产整治企业运行状态， 用户可以使用PC、手机、平板电脑等多种终端实现对平台的访问。
+                </p>
+            </div>
+            <div class="" id="login" style="height: 40px;"></div>
+            <div class="paragraph-item">
+                <h2>一、登录</h2>
+                <div class="pic-positionOne">
+                    <!-- 图片位置 -->
+                    <div>
+                        <img src="./img/loginbg.jpg" alt="登录" srcset="" width="400">
+                        <p>图1-1</p>
+                    </div>
+
+                </div>
+                <div id="user-login">
+                    <h3>1.1 用户登录</h3>
+                    <p>
+                        如图 1-1 为登录界面，用户需输入账号、密码、验证成功后方可登录。登陆成功后APP自动存储登录信息， 鉴权有效期为7天，7天后需要重新登录。如需切换账号，点击“我的” - “退出登录”，即可返回登录页。
+                    </p>
+                </div>
+            </div>
+            <div class="" id="index" style="height: 40px;"></div>
+            <div class="paragraph-item">
+                <h2>二、首页</h2>
+                <div class="pic-position">
+                    <!-- 图片位置 -->
+                    <div>
+                        <img src="./img/home.jpg" alt="首页" srcset="" width="400">
+                        <p>图2-1-1</p>
+                    </div>
+                    <div>
+                        <img src="./img/home1.jpg" alt="首页" srcset="" width="400">
+                        <p>图2-1-2</p>
+                    </div>
+                </div>
+                <p>
+                    如图2-1-1,2-1-2,首页是对环保监控情况的汇总，将总体监控数据优化组合后展现给客户，使客户尽可能多的掌握管理信息。 本界面汇聚了当前登录账号所管理的企业数、设备数、监测点数、治污设施情况以及停产限产执行情况， 并将AQI/错峰生产对比分析、昨日今日用电量、各行业/各区域异常企业占比通过图表的形式展示。下拉列表可进行整个首页的数据刷新。
+                </p>
+            </div>
+            <div class="" id="monitor" style="height: 40px;"></div>
+            <div class="paragraph-item">
+                <h2>三、监控</h2>
+                <div id="monitor1">
+                    <h3>3.1 产污监控</h3>
+                    <div class="pic-positionOne">
+                        <!-- 图片位置 -->
+                        <div>
+                            <img src="./img/monitor1.jpg" alt="产污监控" srcset="" width="400">
+                            <p>图3-1</p>
+                        </div>
+                    </div>
+                    <p>
+                        如图3-1，产污监控将具体的企业产治污监控情况展现给客户，并且可以通过最上方的条件筛选来查看想要查询企业的监控情况。 地图上显示了下方企业所展示的企业定位，绿色企业代表正常状态，红色企业代表异常状态。 企业列表每页加载一定数量的信息，支持下拉刷新和上拉加载更多。
+                    </p>
+                </div>
+                <div id="monitor2">
+                    <h3>3.2 产污设施监控</h3>
+                    <div class="pic-positionOne">
+                        <!-- 图片位置 -->
+                        <div>
+                            <img src="./img/monitor2.jpg" alt="产污设施监控" srcset="" width="400">
+                            <p>图3-2</p>
+                        </div>
+                    </div>
+                    <p>
+                        如图3-2，产治污设施监控是对具体企业所拥有的具体产治污设备的信息展示与监控数据汇总。本功能不仅展示了产治污设备与该设备监测点的对应关系，且将监测点的监测情况、数据进行汇总，条理清晰、直观。 具体操作： 1.当列表滚动到顶部时，继续下拉刷新整页数据。 2.点击列表监测点即可展开该区域监测点数据汇总详情，该界面包括产污设施监测点数量与列表、治污监测点数量与列表以及监测点功率折线图等数据。 3..监测点列表行右侧有复选框，勾选后下方的折线图中便会增加该条监测点的功率曲线，取消勾选则删除该条监测点曲线的展示
+                    </p>
+                </div>
+                <div id="monitor3">
+                    <h3>3.3 实时监控</h3>
+                    <div class="pic-position">
+                        <!-- 图片位置 -->
+                        <div>
+                            <img src="./img/monitor4.jpg" alt="实时监控" srcset="" width="400">
+                            <p>图3-3-1</p>
+                        </div>
+                        <div>
+                            <img src="./img/actual1.jpg" alt="实时监控" srcset="" width="400">
+                            <p>图3-3-2</p>
+                        </div>
+                    </div>
+                    <p>
+                        如图3-3-1、3-3-2，点击实时监控可查看该监测点所监测设备的各项监控数据，包括当天数据和历史数据，首先选择日期， 上半部分图表展示该天的功率和用电量，下方参数模块可选择有功电能、功率因数、无功功率、线缆温度、电压、 电流、有功功率等参数，查看该天的各项参数数据。
+                    </p>
+                </div>
+                <div id="monitor4">
+                    <h3>3.4 视频监控</h3>
+                    <div>
+                        <!-- 图片位置 -->
+                    </div>
+                    <!-- <p>
+                        如图3-4，点击实时监控右上角的视频监控按钮，若该监测点已安装监控设备，则可查看实时直播。
+                    </p> -->
+                </div>
+                <div id="monitor5">
+                    <h3>3.5 企业监控</h3>
+                    <div class="pic-position">
+                        <!-- 图片位置 -->
+                        <div>
+                            <img src="./img/monitor3.jpg" alt="实时监控" srcset="" width="400">
+                            <p>图3-5-1</p>
+                        </div>
+                        <div>
+                            <img src="./img/monitor5.jpg" alt="实时监控" srcset="" width="400">
+                            <p>图3-5-2</p>
+                        </div>
+                    </div>
+                    <p>
+                        如图3-5-1、3-5-2点击产污监控的企业监控按钮可以进入企业监控界面，界面展示该企业产污设施数量、 监测点数量、昨日今日疑似问题点数量、功率折线图、用电量柱状图和产污设施运行情况柱状图。
+                    </p>
+                </div>
+                <div id="monitor6">
+                    <h3>3.6 企业监控历史数据</h3>
+                    <div class="pic-position">
+                        <!-- 图片位置 -->
+                        <div>
+                            <img src="./img/history1.jpg" alt="企业监控历史数据" srcset="" width="400">
+                            <p>图3-6-2</p>
+                        </div>
+                        <div>
+                            <img src="./img/history2.jpg" alt="企业监控历史数据" srcset="" width="400">
+                            <p>图3-6-2</p>
+                        </div>
+                    </div>
+                    <div class="pic-positionOne" style="width: 28%;">
+                        <div>
+                            <img src="./img/history3.jpg" alt="企业监控历史数据" srcset="" width="400">
+                            <p>图3-6-3</p>
+                        </div>
+                    </div>
+                    <p>
+                        如图3-6-1、3-6-2、3-6-3，点击企业监控图表右上角的查看更多按钮可查看对应的企业功率、 用电量和产污设施运行情况历史数据，按日期查询时图表、列表同步刷新当日数据，
+                    </p>
+                </div>
+                <div id="monitor7">
+                    <h3>3.7 企业异常汇总</h3>
+                    <div class="pic-positionOne">
+                        <!-- 图片位置 -->
+                        <div>
+                            <img src="./img/warnAll.jpg" alt="企业异常汇总" srcset="" width="400">
+                            <p>图3-7</p>
+                        </div>
+                    </div>
+                    <p>
+                        如图3-7，点击企业监控上方的疑似问题点区域，可进入企业异常汇总界面，界面展示该企业的报警历史数据， 关于报警的详细内容请查看下一章节4.1：异常报警。
+                    </p>
+                </div>
+            </div>
+            <div class="" id="warn" style="height: 40px;"></div>
+            <div class="paragraph-item">
+                <h2>四、报警</h2>
+                <div id="warn1">
+                    <h3>4.1 异常报警</h3>
+                    <div class="pic-positionOne">
+                        <!-- 图片位置 -->
+                        <div>
+                            <img src="./img/warnAll.jpg" alt="异常预警" srcset="" width="400">
+                            <p>图4-1</p>
+                        </div>
+                    </div>
+                    <p>
+                        如下图4-1，报警模块汇总了系统所采集的所有报警信息，包括未按停限产计划运行产污设备、监测点仪表电参量越限、通讯中断等。 点击右上角可进行报警查询，查询条件有企业名称、时间选择和报警类型。
+                    </p>
+                </div>
+                <div id="warn2">
+                    <h3>4.2 报警状态</h3>
+                    <div class="pic-positionOne">
+                        <!-- 图片位置 -->
+                        <div>
+                            <img src="./img/warn1.jpg" alt="报警状态" srcset="" width="400">
+                            <p>图4-2-1</p>
+                        </div>
+                    </div>
+                    <p>
+                        如图4-2-1，
+                        <p>具体操作： </p>
+                        <p>1.异常处理：用户可填写异常原因、备注、图片说明，上传图片后进行保存，保存成功后该条异常状态变为已处理未申报或已处理不需申报。 </p>
+                        <p>2.异常申报：根据异常处理生成，此时用户可修改申报备注后进行异常申报，申报成功后该条异常状态变为已申报未审核。</p>
+                        <p>3.异常审核：根据异常申报生成，用户可在审核后选择通过或不通过，通过后该条异常状态变为已申报通过审核，不通过则该条异常状态退回已处理未申报。</p>
+                        <p>4。查看详情：异常处理完成，可查看处理详情和异常处理时间节点。</p>
+                    </p>
+                </div>
+            </div>
+            <div class="" id="peak" style="height: 40px;"></div>
+            <div class="paragraph-item">
+                <h2>五、错峰生产</h2>
+                <div class="pic-position">
+                    <!-- 图片位置 -->
+                    <div>
+                        <img src="./img/peak.jpg" alt="错峰生产" srcset="" width="400">
+                        <p>图5-1</p>
+                    </div>
+                    <div>
+                        <img src="./img/peakMore.jpg" alt="错峰生产" srcset="" width="400">
+                        <p>图5-2</p>
+                    </div>
+                </div>
+                <p>
+                    如图5-1，图5-2，错峰生产模块汇总企业停限产执行情况，展示企业有停限产计划的日期、平均目标负荷、当天负荷、是否超负荷违规。 点击右上角可进行企业停限产查询查询，查询条件有企业名称、开始时间和结束时间。 企业在违规状态下，即当天负荷超过目标负荷百分比，则违规右侧会显示查看异常和查看报表两个灰色按钮，点击查看异常跳转企业当天的异常汇总界面，点击查看报表跳转企业当天的实时监控界面。
+                </p>
+            </div>
+            <div class="" id="userInfo" style="height: 40px;"></div>
+            <div class="paragraph-item">
+                <h2>六、个人中心</h2>
+                <div class="pic-positionOne">
+                    <!-- 图片位置 -->
+                    <div>
+                        <img src="./img/userInfo.jpg" alt="个人中心" srcset="" width="400">
+                        <p>图6-1-1</p>
+                    </div>
+                </div>
+                <p>
+                    如图6-1-1，点击底部“我的”进入个人中心界面，该界面将向客户展示当前登录账号信息与APP当前版本，还有一些相关说明。
+                    <p>具体操作： </p>
+                    <p>1.点击操作说明，跳转本说明书，用户可查看操作详细说明。</p>
+                    <p>2.点击版本说明，跳转APP历史版本。 </p>
+                    <p>3.点击检查更新，查看APP是否上架最新版本，若有新版本可选择是否跳转App Store直接更新。 </p>
+                    <p>4.点击“退出登录”按钮，将会返回登录界面。</p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 放大缩小按钮 -->
+    <div class="zoom">
+        <span class="reduce">-</span>
+        <span class="add">+</span>
+    </div>
+    <script>
+        // var oReduce = document.getElementsByClassName("reduce")[0];
+        // var oAdd = document.getElementsByClassName("add")[0];
+    </script>
+</body>
+
+</html>
